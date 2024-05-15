@@ -1,0 +1,93 @@
+/*=================================================
+Variables
+=================================================*/
+@use "_colors" as c;
+
+/*=================================================
+Import
+=================================================*/
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+
+/*=================================================
+Typography
+=================================================*/
+/*=================================
+Responsive typography
+=================================*/
+/* Base */
+:root {
+  --text-multiplier: 1;
+  --question-multiplier: 1;
+}
+
+/* Breakpoints */
+@media (min-width: 48rem) {
+  :root {
+    --text-multiplier: 1.5;
+  }
+}
+
+@media (min-width: 64rem) {
+  :root {
+    --text-multiplier: 1.75;
+  }
+}
+
+@media (min-width: 80rem) {
+  :root {
+    --text-multiplier: 2;
+  }
+}
+
+h1 {
+  font-size: calc(2rem * var(--text-multiplier));
+}
+
+h2 {
+  font-size: calc(1.25rem * var(--text-multiplier));
+}
+
+.question {
+  font-size: calc(1.1rem * var(--question-multiplier));
+}
+
+/*=================================
+BEM typography
+=================================*/
+body {
+  font-family: "Shantell Sans", cursive, Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  color: c.$lightest;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+.header__text {
+  font-family: cursive;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+
+
+.footer p {
+  font-size: 0.8rem;
+}
+
+.shorten {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 450px) {
+  .header__text {
+    font-size: 12px;
+  }
+
+  .presentation {
+    font-size: 1rem;
+  }
+}

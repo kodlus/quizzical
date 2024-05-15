@@ -1,0 +1,46 @@
+/*=================================================
+Variables
+=================================================*/
+@use "_colors" as c;
+
+
+/*=================================================
+Utility
+=================================================*/
+:disabled {
+  color: rgb(34, 34, 34);
+}
+
+:disabled:hover {
+  cursor: not-allowed;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.selected {
+  background-color: c.$accentDark;
+}
+
+.correct {
+  background-color: c.$correctLight;
+}
+
+.incorrect {
+  background-color: c.$wrongLight;
+}
+
+.btn--option.selected {
+  border: 2px solid black
+}
+
+.btn--option.correct.selected{
+  background-color: c.$correctDark;
+  color:#000000;
+}
+
+.btn--option.incorrect.selected {
+  background-color: c.$wrongDark;
+  color:#000000;
+}

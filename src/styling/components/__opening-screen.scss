@@ -1,0 +1,43 @@
+/*=================================================
+Variables
+=================================================*/
+@use "../_colors" as c;
+
+/*=================================================
+Opening screen
+=================================================*/
+.opening-screen {
+  background-color: c.$dark;
+
+  padding: 3em;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  border-radius: 5px;
+  width: 100%;
+  overflow: hidden;
+}
+
+ .opening-screen__tagline {
+  margin-top: -20px;
+ }
+
+ @media (max-width: 770px) {
+  .opening-screen {
+    padding: 2em;
+  }
+}
+
+ @media (max-width: 460px) {
+  .opening-screen {
+    padding: 1.3em;
+  }
+}
+
+@media (max-width: 360px) {
+  .opening-screen {
+    padding: 1em;
+  }
+}

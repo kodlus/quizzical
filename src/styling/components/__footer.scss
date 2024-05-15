@@ -1,0 +1,25 @@
+/*=================================================
+Variables
+=================================================*/
+@use "../_colors" as c;
+
+/*=================================================
+Footer
+=================================================*/
+.footer {
+  justify-content: center;
+  align-items: center;
+  background-color: c.$darkest;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+
+  padding: 1em 0;
+  height: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+  letter-spacing: 3px;
+}

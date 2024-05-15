@@ -1,0 +1,82 @@
+/*=================================================
+Variables
+=================================================*/
+@use "_colors" as c;
+
+/*=================================================
+Buttons
+=================================================*/
+.btn {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.7em 0.5em;
+  border: 1px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: c.$accent;
+  transition: background-color 200ms ease-in;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: c.$accentDark;
+}
+
+.btn:focus {
+  background-color: c.$accentDark;
+}
+
+.btn--form {
+  margin-top: 2em;
+  background-color: c.$accent; // Fallback
+  animation: pulse ease-in-out 3000ms infinite;
+}
+
+.btn--form,
+.btn--check,
+.btn--gameover {
+  padding: 1.1em 0.5em;
+}
+
+.btn--check,
+.btn--gameover {
+  margin-top: 1em;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn--check {
+  background-color: c.$accentDarkest;
+}
+
+.btn--check:hover {
+  background-color: c.$accentDark;
+}
+
+.btn--gameover {
+  width: 100%;
+
+  /* Fallback */
+  background-color: rgb(173, 211, 198);
+  animation: pulse ease-in-out 3000ms infinite;
+}
+
+.btn--option {
+  height: 70px;
+}
+
+
+/*=================================================
+Animation
+=================================================*/
+@keyframes pulse {
+  0% {
+    background-color:  c.$accent;
+  }
+  50% {
+    background-color: c.$accentDark;
+  }
+  100% {
+    background-color: c.$accent;
+  }
+}

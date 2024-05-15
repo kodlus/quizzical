@@ -1,0 +1,22 @@
+/*=================================================
+Main
+=================================================*/
+#root {
+  position: relative;
+}
+
+.app {
+  min-width: 250px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 75px;
+  background-color: rgb(65, 65, 65); // fallback
+  border-radius: 5px;
+}
+
+@media (max-width: 650px) {
+  .app {
+    width: 90%;
+  }
+}

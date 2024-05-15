@@ -1,0 +1,22 @@
+/*=================================================
+Question container
+=================================================*/
+.question-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.question-container__options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+}
+
+@media screen and (max-width: 650px) {
+  .question-container__options {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

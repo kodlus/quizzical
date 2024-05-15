@@ -1,0 +1,38 @@
+/*=================================================
+Variables
+=================================================*/
+@use "../_colors" as c;
+
+/*=================================================
+Options form
+=================================================*/
+.options-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+
+  /* Lazy fix */
+  input,
+  select {
+    font-size: inherit;
+    font-family: inherit;
+    text-align: center;
+    padding: 0.7em;
+    border: 1px solid c.$darkest;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+}
+
+.form-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media (max-width: 360px) {
+  .options-form {
+    width: 90%;
+  }
+}

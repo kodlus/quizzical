@@ -1,0 +1,83 @@
+/*=================================================
+Animated background
+=================================================*/
+/* Cool infinite background scrolling animation.
+ * Twitter: @kootoopas
+ */
+/* Exo thin font from Google. */
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+
+/* https://www.digitalocean.com/community/tutorials/how-to-change-a-css-background-images-opacity */
+.background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+
+  /* Fallback color */
+  background-color: rgb(194, 193, 193);
+  
+  /* img size is 50x50 */
+  background-image: url("/questionDark.png");
+  background-repeat: repeat;
+  background-position: 0 0;
+  -webkit-animation: bg-scrolling-reverse 3s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse 3s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse 3s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse 3s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+
+  transition: opacity ease-in 0.5s;
+  -webkit-transition: opacity ease-in 0.5s;
+}
