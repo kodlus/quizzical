@@ -2,7 +2,7 @@
 /*=================================================
 Import
 =================================================*/
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import OpeningScreen from './components/OpeningScreen';
 import GameScreen from './components/GameScreen';
 import Header from './components/Header.jsx';
@@ -33,6 +33,11 @@ const App = () => {
   } else {
     document.getElementsByClassName("background")[0].style.opacity = "0.3"
   }
+
+    // Scrolls to the top when OpeningScreen mounts
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [gameHasStarted]);
 
   /*=================================
   JSX
