@@ -7,6 +7,10 @@ Reset
   box-sizing: border-box;
 }
 
+html {
+  overscroll-behavior: contain;
+}
+
 img {
   display: block;
   max-width: 100%;
